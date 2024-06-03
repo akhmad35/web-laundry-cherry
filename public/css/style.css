@@ -381,6 +381,10 @@ header .container {
 /*------ Section: Features ------*/
 
 /* Global Styles */
+
+.feutures2 h2 {
+  margin-top: 50px;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -509,6 +513,107 @@ header .container {
     padding: 49.6px 20px; /* 3.1em = 3.1 * 16px, 1.25em = 1.25 * 16px */
   }
 }
+/*------ Section: Features 2 ------*/
+
+/* Global Styles */
+/* Style for the entire section */
+.feutures2 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section_title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for each column */
+.column2 {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+/* Style for the card */
+.card2 {
+  border-radius: 10px;
+  padding: 20px;  
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #397ef6;
+}
+
+.card2 h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card2 p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Media Queries */
+
+/* Smartphones */
+@media screen and (max-width: 767px) {
+  .row2 {
+    padding: 0 20px; /* Reduced padding for small screens */
+  }
+  .column2 {
+    flex: 0 0 100%;
+  }
+  .card2 {
+    padding: 30px 15px; /* Adjust padding for small screens */
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .row2 {
+    padding: 0 40px; /* Reduced padding for medium screens */
+  }
+  .column2 {
+    flex: 0 0 50%;
+    padding: 16px; /* Adjust padding */
+  }
+  .card2 {
+    padding: 40px 20px; /* Adjust padding for medium screens */
+  }
+}
+
+/* Laptops */
+@media screen and (min-width: 992px) {
+  .row2 {
+    padding: 0 90px;
+  }
+  .column2 {
+    flex: 0 0 33.33%;
+    padding: 16px; /* 1em = 16px */
+  }
+  .card2 {
+    padding: 49.6px 20px; /* 3.1em = 3.1 * 16px, 1.25em = 1.25 * 16px */
+  }
+}
+
+
 
 /*------ maps ------*/
 
