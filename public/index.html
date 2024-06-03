@@ -1,716 +1,190 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>laundry cherry</title>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
-::selection {
-  color: #fff;
-  background-color: var(--main-color);
-}
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background-color: var(--second-color);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-  border-radius: 10px;
-}
-:root {
-  --main-color: #038eff;
-  --second-color: #f3f3f3;
-  --title-color: #222;
-  --subitle-color: #8d8d8d;
-}
-body {
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
-  overflow-x: hidden;
-  position: relative;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  border: 5px solid white;
-  border-radius: 50%;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-.img-fluid:hover {
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
-    0 0 100px var(--main-color);
-}
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-.section {
-  padding: 90px 0 0;
-}
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 50px;
-}
-.btn {
-  background-color: var(--main-color);
-  border: 2px solid var(--main-color);
-  padding: 10px 15px;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 10px;
-  transition: 0.4s;
-}
-.btn:hover {
-  background-color: transparent;
-  border: 2px solid var(--main-color);
-  color: var(--main-color);
-}
-.btn i {
-  font-size: 20px;
-  margin-left: 10px;
-}
-.section_title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 600;
-  text-transform: capitalize;
-  line-height: 0, 5;
-  color: #222;
-  position: relative;
-  margin-bottom: 100px;
-  padding-bottom: 20px;
-}
-.section_title::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 2px;
-  background-color: var(--main-color);
-}
-.section_title::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--main-color);
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-}
+    <!-- main file css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <h2>Laundry Cherry</h2>
+        </div>
+        <ul class="menu">
+          <li class="menu_item">
+            <a href="#hero" class="menu_link active-link">Beranda</a>
+          </li>
+          <li class="menu_item">
+            <a href="#about" class="menu_link">Tentang</a>
+          </li>
+          <li class="menu_item">
+            <a href="#layanan" class="menu_link">Layanan</a>
+          </li>
+          <li class="menu_item">
+            <a href="#maps" class="menu_link">Alamat</a>
+          </li>
+          <ion-icon name="close-outline" class="close_icon"></ion-icon>
+        </ul>
+        <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero section" id="hero">
+        <div class="hero_container">
+          <div class="home-text">
+            <h1>Laundry<span> Cherry</span> <br> Pasti Bersih dan Wangi</h1>
+            <a href="#about" class="btn">Selengkapnya</a>
+        </div>
+        </div>
+      </section>
 
-/* ========== header section ==========  */
-header {
-  position: fixed;
-  width: 100%;
-  padding: 20px 0;
-  z-index: 1000;
-}
-header.active {
-  background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-}
-header.active .logo{
-  color: black;
-}
-header.active a {
-  color: black;
-}
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <h2 class="section_title">Tentang</h2>
+        <div class="about_container container grid">
+          <div class="about_img">
+            <img src="image/logo_laundry_cherry.png" alt="About Me"/>
+          </div>
+          <div class="about_content">
+            <p>
+              Laundry Cherry adalah penyedia layanan laundry terpercaya yang berdedikasi untuk memberikan hasil cucian yang bersih, harum, dan rapi. Dengan peralatan modern dan tim profesional, kami memastikan setiap pakaian Anda mendapatkan perawatan terbaik. Nikmati kemudahan layanan antar jemput dan jadikan Laundry Cherry sebagai solusi ideal untuk semua kebutuhan laundry Anda.
+            </p>
+          </div>
+        </div>
+      </section>
 
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
-  text-align: left;
-  color: white;
-}
-.menu {
-  white-space: nowrap;
-  transition: 0.5s;
-  z-index: 999;
-  position: relative;
-}
-.menu_item {
-  display: inline-block;
-}
-.menu_item a {
-  color: white;
-}
-.menu_link {
-  padding: 5px 10px;
-  position: relative;
-  transition: 0.4s;
-  color: #333;
-  font-weight: 500;
-}
-.menu_link::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--main-color);
-  transform: scale(0);
-  transition: 0.4s;
-}
-.menu_link:hover {
-  color: var(--main-color);
-}
-.active-link {
-  color: var(--main-color);
-}
-.menu_link.active-link::before,
-.menu_link:hover::before {
-  transform: scale(1);
-}
-.close_icon {
-  font-size: 25px;
-  position: absolute;
-  top: 30px;
-  right: 250px;
-  z-index: 1000;
-  color: var(--main-color);
-  cursor: pointer;
-  display: none;
-}
-.toggle_icon {
-  font-size: 32px;
-  display: none;
-  cursor: pointer;
-  margin-right: 10px;
-}
-@media screen and (max-width: 768px) {
-  header a {
-    color: black;
-  }
-  .container {
-    padding: 0 30px;
-  }
-  .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #fff;
-    height: 100vh;
-    padding-top: 100px;
-    width: 300px;
-    text-align: center;
-    transform: translateX(110%);
-    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.15);
-  }
-  .menu_item a {
-    color: rgb(0, 0, 0);
-  }
-  .menu.active {
-    transform: translateX(0);
-  }
-  .menu_item {
-    display: block;
-    margin: 20px 0;
-  }
-  .menu_link {
-    color: #333;
-  }
-  .toggle_icon {
-    display: block;
-  }
-  .close_icon {
-    display: block;
-  }
-}
+      <!-- Menu Section -->
+      <!------ Section: Features ------>
+      <section class="feutures" id="layanan">
+        <h2 class="section_title">Layanan Kami</h2> 
+        <div class="row">
+          <!-- Column One -->
+          <div class="column">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <h3>kualitas terjamin</h3>
+              <p>
+                kami sudah ada sejak 2010
+              </p>
+            </div>
+          </div>
+          <!-- Column Two -->
+          <div class="column">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3>Terpercaya</h3>
+              <p>
+                kami menjamin pakaian anda tidak akan hilang
+              </p>
+            </div>
+          </div>
+          <!-- Column Three -->
+          <div class="column">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>
+              </div>
+              <h3>Murah</h3>
+              <p>
+                Kami menawarkan harga yang terjangkau
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-/* Hero Section */
-.hero {
-  height: 100vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url("hero_laundry.jpg ");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
+    </main>
+<main>
+    <!--  peta -->
+    <section class="alamat" id="maps">
+      <h2 class="section_title">Alamat</h2>
+        <section>
+            <!-- Map  -->
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.8546359067892!2d106.81433656954952!3d-6.594789799587429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5d7a9f32373%3A0xc51f93c3cc150ecb!2sJl.%20Tegal%20Lega%2060-58%2C%20RT.01%2FRW.01%2C%20Tegallega%2C%20Kecamatan%20Bogor%20Tengah%2C%20Kota%20Bogor%2C%20Jawa%20Barat%2016143!5e0!3m2!1sid!2sid!4v1717079849528!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
 
-.hero_container {
-  margin-top: 200px;
-  text-align: center;
-}
+    <!-- Footer -->
+    <!-- Footer -->
+    <section>
+      <footer class="footer-distributed">
 
-.hero_container h4 {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--main-color);
-  text-transform: uppercase;
-}
-.hero_container h1 {
-  font-size: 40px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  white-space: nowrap;
-  color: white;
-}
-.hero_container span {
-  font-size: 40px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  white-space: nowrap;
-  color: #466dcf;
-}
-.hero_container p {
-  margin: 10px 0 40px;
-  color: #333;
-  font-size: 18px;
-}
-.hero_container .btn {
-  margin-top: 10px;
-  display: inline-flex;
-  align-items: center;
-}
-.hero_social {
-  display: flex;
-  column-gap: 20px;
-}
-.hero_social a {
-  font-size: 22px;
-  display: inline-flex;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  background-color: #eee;
-  color: #333;
-  transition: 0.3s;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.hero_social a:hover {
-  color: var(--main-color);
-  box-shadow: 0 0 10px var(--main-color);
-}
-.hero_img {
-  text-align: right;
-}
+        <div class="footer-left">
+            <h3>Laundry<span>Cherry</span></h3>
 
-@media screen and (max-width: 768px) {
-  .hero_container h4 {
-    font-size: 16px;
-  }
-  .hero_container h1 {
-    font-size: 32px;
-  }
-  .hero_container p {
-    font-size: 15px;
-  }
-}
+            <p class="footer-links">
+                <a href="#hero">Beranda</a>
+                |
+                <a href="#about">Tentang</a>
+                |
+                <a href="#layanan">Layanan</a>
+                |
+                <a href="#maps">Alamat</a>
+            </p>
 
-@media screen and (max-width: 576px) {
-  .hero_container {
-    margin-top: 100px;
-  }
-  .hero_container h1 {
-    font-size: 28px;
-  }
-  .hero_container span {
-    font-size: 28px;
-  }
-  .hero_container p {
-    font-size: 14px;
-  }
-}
+            <p class="footer-company-name">Copyright © 2024 <strong>Laundry Cherry</strong> All rights reserved</p>
+        </div>
 
-/* about section */
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+              <p><span>Indonesia</span>
+                Jl. Tegallega No.58</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+              <p>+6285770228887</p>
+          </div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-company-about">
+              <span>Tentang Kami</span>
+              <strong>Laundry Cherry</strong> adalah laundry yang berada di bogor dan sudah terpercaya sejak 2010
+          </p>
+      </div>
+    
+    </footer>
+    </section>
+    </main>
 
-.about_container {
-  column-gap: 0;
-  align-items: center;
-  margin: 20px 90px;
-}
-.about_content p {
-  color: #333;
-  margin: 20px 15px;
-}
-.about_img img {
-  width: 75%;
-  height: auto;
-  border-radius: 15px;
-}
-@media screen and (max-width: 992px) {
-  .about_container {
-    grid-template-columns: 3fr 2fr;
-  }
-}
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-@media screen and (max-width: 768px) {
-  .about_container {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center;
-  }
-  .about_info {
-    justify-content: center;
-  }
-  .about_info > div .text {
-    font-size: 14px;
-  }
-}
+    <!-- ionIcons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-/*------ Section: Features ------*/
-
-/* Global Styles */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  padding: 0 90px;
-}
-
-.row h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 3.75em;
-  margin: 0.6em 0;
-  font-weight: 600;
-  color: #070024;
-}
-
-.column {
-  padding: 1em;
-  max-width: 33.33%;
-  box-sizing: border-box;
-  flex: 1 1 33.33%;
-}
-
-.card {
-  padding: 3.1em 1.25em;
-  text-align: center;
-  background: linear-gradient(0deg, #397ef6 10px, transparent 10px);
-  background-repeat: no-repeat;
-  background-position: 0 0.62em;
-  box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.15);
-  border-radius: 0.5em;
-  transition: 0.5s;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Ensures even spacing */
-  height: 100%; /* Ensure the card takes full height */
-}
-
-.card .icon {
-  font-size: 2.5em;
-  height: 2em;
-  width: 2em;
-  margin: auto;
-  background-color: #397ef6;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  color: #ffffff;
-}
-
-.icon:before {
-  position: absolute;
-  content: "";
-  height: 1.5em;
-  width: 1.5em;
-  border: 0.12em solid #397ef6;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-.card h3 {
-  font-size: 1.3em;
-  margin: 1em 0 1.4em 0;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  color: #070024;
-}
-
-.card p {
-  line-height: 2em;
-  color: #625a71;
-}
-
-.card:hover {
-  background-position: 0;
-}
-
-.card:hover .icon:before {
-  height: 2.25em;
-  width: 2.25em;
-}
-
-/* Media Queries */
-
-/* Smartphones */
-@media screen and (max-width: 767px) {
-  .row {
-    padding: 0 20px; /* Reduced padding for small screens */
-  }
-  .column {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .card {
-    padding: 30px 15px; /* Adjust padding for small screens */
-  }
-}
-
-/* Tablets */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .row {
-    padding: 0 40px; /* Reduced padding for medium screens */
-  }
-  .column {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 16px; /* Adjust padding */
-  }
-  .card {
-    padding: 40px 20px; /* Adjust padding for medium screens */
-  }
-}
-
-/* Laptops */
-@media screen and (min-width: 992px) {
-  .row {
-    padding: 0 90px;
-  }
-  .column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 16px; /* 1em = 16px */
-  }
-  .card {
-    padding: 49.6px 20px; /* 3.1em = 3.1 * 16px, 1.25em = 1.25 * 16px */
-  }
-}
-
-/*------ maps ------*/
-
-.alamat {
-  margin-top: 80px;
-}
-/* alamat */
-.map {
-  margin: 20px 90px;
-}
-.map iframe {
-  width: 100%;
-  height: 600px;
-}
-@media (max-width: 964px) {
-  .contact-container {
-    margin: auto;
-    width: 90%;
-  }
-}
-@media (max-width: 700px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 20rem !important;
-  }
-  .map iframe {
-    height: 400px;
-  }
-}
-
-/* Footer */
-.footer {
-  position: flex;
-  bottom: 0;
-}
-
-@media (max-height: 800px) {
-  footer {
-    position: static;
-  }
-  header {
-    padding-top: 40px;
-  }
-}
-
-.footer-distributed {
-  background-color: #2d2a30;
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: bold 16px sans-serif;
-  padding: 50px 50px 60px 50px;
-  margin-top: 80px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left {
-  width: 30%;
-}
-
-.footer-distributed h3 {
-  color: #ffffff;
-  font: normal 36px "Cookie", cursive;
-  margin: 0;
-}
-
-.footer-distributed h3 span {
-  color: #1c77e0;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links {
-  color: #ffffff;
-  margin: 20px 0 12px;
-}
-
-.footer-distributed .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer-distributed .footer-company-name {
-  color: #8f9296;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center {
-  width: 35%;
-}
-
-.footer-distributed .footer-center i {
-  background-color: #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p {
-  display: inline-block;
-  color: #ffffff;
-  vertical-align: middle;
-  margin: 0;
-}
-
-.footer-distributed .footer-center p span {
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2;
-}
-
-.footer-distributed .footer-center p a {
-  color: #e0ac1c;
-  text-decoration: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right {
-  width: 30%;
-}
-
-.footer-distributed .footer-company-about {
-  line-height: 20px;
-  color: #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span {
-  display: block;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons {
-  margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #33383b;
-  border-radius: 2px;
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
-.footer-distributed .footer-icons a:hover {
-  background-color: #3f71ea;
-}
-
-.footer-links a:hover {
-  color: #3f71ea;
-}
-
-@media (max-width: 880px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  .footer-distributed .footer-center i {
-    margin-left: 0;
-  }
-}
+    <!-- Main Script-->
+    <script src="js/animasi.js"></script>
+  </body>
+</html>
