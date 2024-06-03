@@ -31,7 +31,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  height: 1000px;
   overflow-x: hidden;
   position: relative;
 }
@@ -202,7 +201,7 @@ header .container {
   margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
-  header#header a {
+  header a {
     color: black;
   }
   .container {
@@ -219,6 +218,9 @@ header .container {
     text-align: center;
     transform: translateX(110%);
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .menu_item a {
+    color: rgb(0, 0, 0);
   }
   .menu.active {
     transform: translateX(0);
@@ -314,32 +316,29 @@ header .container {
 }
 
 @media screen and (max-width: 768px) {
-  .hero_content h4 {
+  .hero_container h4 {
     font-size: 16px;
   }
-  .hero_content h1 {
+  .hero_container h1 {
     font-size: 32px;
   }
-  .hero_content p {
+  .hero_container p {
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .hero_container {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-    justify-content: center;
+    margin-top: 100px;
   }
-  .hero_content {
-    order: 2;
-    text-align: center;
+  .hero_container h1 {
+    font-size: 28px;
   }
-  .hero_social {
-    justify-content: center;
+  .hero_container span {
+    font-size: 28px;
   }
-  .hero_img {
-    text-align: center;
+  .hero_container p {
+    font-size: 14px;
   }
 }
 
@@ -517,7 +516,6 @@ header .container {
   margin-top: 80px;
 }
 /* alamat */
-
 .map {
   margin: 20px 90px;
 }
