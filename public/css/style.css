@@ -380,8 +380,6 @@ header .container {
 
 /*------ Section: Features ------*/
 
-/* Global Styles */
-
 .feutures2 h2 {
   margin-top: 50px;
 }
@@ -420,8 +418,8 @@ header .container {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures even spacing */
-  height: 100%; /* Ensure the card takes full height */
+  justify-content: space-between; 
+  height: 100%; 
 }
 
 .card .icon {
@@ -473,29 +471,29 @@ header .container {
 /* Smartphones */
 @media screen and (max-width: 767px) {
   .row {
-    padding: 0 20px; /* Reduced padding for small screens */
+    padding: 0 20px; 
   }
   .column {
     flex: 0 0 100%;
     max-width: 100%;
   }
   .card {
-    padding: 30px 15px; /* Adjust padding for small screens */
+    padding: 30px 15px; 
   }
 }
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .row {
-    padding: 0 40px; /* Reduced padding for medium screens */
+    padding: 0 40px; 
   }
   .column {
     flex: 0 0 50%;
     max-width: 50%;
-    padding: 16px; /* Adjust padding */
+    padding: 16px;
   }
   .card {
-    padding: 40px 20px; /* Adjust padding for medium screens */
+    padding: 40px 20px;
   }
 }
 
@@ -507,16 +505,14 @@ header .container {
   .column {
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    padding: 16px; /* 1em = 16px */
+    padding: 16px;
   }
   .card {
-    padding: 49.6px 20px; /* 3.1em = 3.1 * 16px, 1.25em = 1.25 * 16px */
+    padding: 49.6px 20px; 
   }
 }
 /*------ Section: Features 2 ------*/
 
-/* Global Styles */
-/* Style for the entire section */
 .feutures2 {
   padding: 50px 20px;
   text-align: center;
@@ -535,13 +531,12 @@ header .container {
   gap: 20px;
 }
 
-/* Style for each column */
 .column2 {
   flex: 1 1 300px;
   max-width: 300px;
 }
 
-/* Style for the card */
+
 .card2 {
   border-radius: 10px;
   padding: 20px;  
@@ -575,27 +570,27 @@ header .container {
 /* Smartphones */
 @media screen and (max-width: 767px) {
   .row2 {
-    padding: 0 20px; /* Reduced padding for small screens */
+    padding: 0 20px; 
   }
   .column2 {
     flex: 0 0 100%;
   }
   .card2 {
-    padding: 30px 15px; /* Adjust padding for small screens */
+    padding: 30px 15px;
   }
 }
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .row2 {
-    padding: 0 40px; /* Reduced padding for medium screens */
+    padding: 0 40px;
   }
   .column2 {
     flex: 0 0 50%;
-    padding: 16px; /* Adjust padding */
+    padding: 16px;
   }
   .card2 {
-    padding: 40px 20px; /* Adjust padding for medium screens */
+    padding: 40px 20px; 
   }
 }
 
@@ -606,10 +601,10 @@ header .container {
   }
   .column2 {
     flex: 0 0 33.33%;
-    padding: 16px; /* 1em = 16px */
+    padding: 16px; 
   }
   .card2 {
-    padding: 49.6px 20px; /* 3.1em = 3.1 * 16px, 1.25em = 1.25 * 16px */
+    padding: 49.6px 20px; 
   }
 }
 
@@ -620,7 +615,7 @@ header .container {
 .alamat {
   margin-top: 80px;
 }
-/* alamat */
+
 .map {
   margin: 20px 90px;
 }
